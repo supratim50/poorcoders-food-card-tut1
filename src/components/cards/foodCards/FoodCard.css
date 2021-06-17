@@ -6,9 +6,16 @@
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: flex;
+  transition: 0.3s ease-in-out;
+}
+
+.card-box-active {
+  flex-direction: column !important;
+  max-width: 550px !important;
+  height: 400px !important;
 }
 
 .background-box {
@@ -16,10 +23,14 @@
   bottom: 0;
   right: 0;
   width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 
 .background-image {
-  max-width: 100%;
+  height: 100%;
 }
 
 .image-box {
@@ -33,11 +44,18 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
 
   align-self: center;
   margin-left: -100px;
 
+  cursor: pointer;
   z-index: 1;
+}
+
+.image-box-active {
+  margin-left: 0 !important;
+  margin-top: -100px !important;
 }
 
 .image {
@@ -52,8 +70,15 @@
 
   display: flex;
   flex-direction: column;
+  transition: 0.3s ease-in-out;
 
   z-index: 1;
+}
+
+.details-box-active {
+  padding: 35px 24px 24px;
+  margin-left: 0;
+  flex: 1;
 }
 
 .heading {
@@ -62,15 +87,46 @@
   color: #343131;
   line-height: 21px;
   flex: 1;
+
+  transition: 0.3s ease-in-out;
+}
+
+.heading-active {
+  font-size: 18px;
+  line-height: 27px;
+  flex: none;
+}
+
+.food-details {
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+  margin-top: 10px;
+  flex: 1;
+  transition: 0.3s ease-in-out;
+
+  display: none;
+}
+
+.food-details-active {
+  display: block;
 }
 
 .price-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  transition: 0.3s ease-in-out;
 }
 
 .price {
   font-size: 18px;
   font-weight: 600;
+
+  transition: 0.3s ease-in-out;
+}
+
+.price-active {
+  font-size: 34px;
 }
