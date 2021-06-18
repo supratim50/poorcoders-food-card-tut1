@@ -13,7 +13,6 @@
 }
 
 .card-box-active {
-  flex-direction: column !important;
   max-width: 550px !important;
   height: 400px !important;
 }
@@ -46,16 +45,17 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease-in-out;
 
-  align-self: center;
-  margin-left: -100px;
+  position: absolute;
+  top: 25px;
+  left: -21%;
 
   cursor: pointer;
   z-index: 1;
 }
 
 .image-box-active {
-  margin-left: 0 !important;
-  margin-top: -100px !important;
+  top: -100px;
+  left: 30%;
 }
 
 .image {
@@ -65,8 +65,9 @@
 }
 
 .details-box {
-  margin-left: 10px;
+  margin-left: 115px;
   padding: 56px 24px 24px 0;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -76,8 +77,9 @@
 }
 
 .details-box-active {
-  padding: 35px 24px 24px;
+  margin-top: 85px;
   margin-left: 0;
+  padding: 35px 24px 24px;
   flex: 1;
 }
 
@@ -103,7 +105,7 @@
   color: #666666;
   margin-top: 10px;
   flex: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 
   display: none;
 }
